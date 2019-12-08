@@ -2,7 +2,11 @@ class Board
   attr_accessor :cells
   attr_reader
   attr_writer
+<<<<<<< HEAD
   def initialize
+=======
+  def initilize
+>>>>>>> 308495d6590ff930ea35c31cb95f1a09920c221a
     reset!
   end
   def cells
@@ -12,6 +16,7 @@ class Board
     @cells = Array.new(9, " ")
   end
   def display
+<<<<<<< HEAD
     puts row_1 = " #{@cells[0]} | #{@cells[1]} | #{@cells[2]} "
     puts divider = "-----------"
     puts row_2 = " #{@cells[3]} | #{@cells[4]} | #{@cells[5]} "
@@ -20,6 +25,12 @@ class Board
   end
   def position(user_position)
     return @cells[(user_position.to_i)-1]
+=======
+    print @cells
+  end
+  def position(user_position)
+    return @cells[user_position]
+>>>>>>> 308495d6590ff930ea35c31cb95f1a09920c221a
   end
   def full?
     @cells.each do |cell|
@@ -46,14 +57,22 @@ class Board
     end
   end
   def valid_move?(index)
+<<<<<<< HEAD
     index = index.to_i
     if index > 9 || index < 1 || self.taken?(index)
+=======
+    if index > 9 || index < 1 || taken?
+>>>>>>> 308495d6590ff930ea35c31cb95f1a09920c221a
       return false
     else
       return true
     end
   end
   def update(index,player)
+<<<<<<< HEAD
     @cells[(index.to_i)-1] = player.token
+=======
+    @cells[index] = player.token
+>>>>>>> 308495d6590ff930ea35c31cb95f1a09920c221a
   end
 end

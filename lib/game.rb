@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Game
   require "pry"
 
@@ -87,3 +88,13 @@ class Game
   end
 
 end
+=======
+# class Game
+#   attr_accessor
+#   attr_reader
+#   attr_writer
+#   def initilize()
+#
+#   end
+# end
+>>>>>>> 308495d6590ff930ea35c31cb95f1a09920c221a
